@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Build a survery form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="header">
+      <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+      <p id="description" class="text-center">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
     <main>
       <div>
-        <header class="header">
-          <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
-          <p id="description" class="text-center">
-            Thank you for taking the time to help us improve the platform
-          </p>
-        </header>
         <form id="survery-form">
           <div class="form-group">
             <label for="name" id="name-label">Name</label>
@@ -52,14 +52,23 @@
           <div class="form-group">
             <fieldset>
               <legend>Which option best describes your current role?</legend>
-              <select id="dropdown" name="role" class="form-control" required>
-                <option disabled selected value>select current role</option>
+              <select
+                id="dropdown"
+                name="role"
+                class="form-control"
+                required=""
+              >
+                <option disabled="" selected="" value="">
+                  select current role
+                </option>
                 <option value="student">Student</option>
                 <option value="job">Full Time Job</option>
                 <option value="learner">Full Time Learner</option>
                 <option value="preferno">Prefer not to say</option>
                 <option value="other">Other</option>
               </select>
+            </fieldset>
+            <fieldset>
               <legend>Would you recommend freeCodeCamp to a friend?</legend>
               <label for="definitely" id="definitely-label">Definitely</label>
               <input
@@ -83,7 +92,8 @@
                 type="radio"
                 class="input-radio"
               />
-              <br />
+            </fieldset>
+            <fieldset>
               <legend>What is your favorite feature of freeCodeCamp?</legend>
               <select
                 id="most-like"
@@ -91,14 +101,18 @@
                 class="form-control"
                 required
               >
-                <option disabled selected value>Select an option</option>
+                <option disabled="" selected="" value="">
+                  Select an option
+                </option>
                 <option value="challenges">Challenges</option>
                 <option value="projects">Projects</option>
                 <option value="community">Community</option>
                 <option value="opensource">Open Source</option>
               </select>
+            </fieldset>
+            <fieldset>
               <legend>
-                What would you like to see improved?<span class="clue"
+                would you like to see improved?<span class="clue"
                   >(Check all that apply)</span
                 >
               </legend>
@@ -197,15 +211,13 @@
             </fieldset>
           </div>
           <div class="form-group">
-            <legend>Any comments or suggestions?</legend>
+            <label for="comments">Any comments or suggestions?</label>
             <textarea
               id="comments"
               class="input-textarea"
               name="comment"
               placeholder="Enter your comment here..."
             ></textarea>
-          </div>
-          <div class="form-group">
             <input type="submit" value="Submit" />
           </div>
         </form>
