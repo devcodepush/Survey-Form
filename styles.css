@@ -1,3 +1,24 @@
-* {
-    background-color: rgb(66, 209, 66);
+body {
+   background-color: rgba(18, 7, 80, 0.63);
+}
+
+body {
+    line-height: 2rem;
+    color: white;
+    font-size: larger;
+}
+
+.header {
+    text-align: center;
+}
+
+.header > p {
+    font-style: italic;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(3, 3, 70, 0.5);
+    padding: 2rem;
 }
