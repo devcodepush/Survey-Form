@@ -1,9 +1,10 @@
+<<<<<<< HEAD
 
 # Hi, I'm Arman! 👋
 
 
 ## 🚀 About Me
-I'll admit it with a little modesty and care: I'm a frontend developer.
+I will admit it with a little modesty and care: I'm a frontend developer.
 # Survery Form
 
 A form HTML tempate as a exercise for creating a webpage to collect the data.
@@ -32,3 +33,9 @@ My challenge was to create a web page similar to [this one](https://www.freecode
 ## 🛠 Skills
 HTML, CSS
 
+||||||| 8189469
+# build-a-survey-form
+=======
+# build-a-survey-form
+
+>>>>>>> 00b1949d979024280fd48324f7177589bd655b09
