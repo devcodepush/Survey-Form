@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Hi, I'm Arman! 👋
 
 
@@ -33,9 +31,3 @@ My challenge was to create a web page similar to [this one](https://www.freecode
 ## 🛠 Skills
 HTML, CSS
 
-||||||| 8189469
-# build-a-survey-form
-=======
-# build-a-survey-form
-
->>>>>>> 00b1949d979024280fd48324f7177589bd655b09
