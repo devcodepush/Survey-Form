@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survery form</title>
+    <title>Background form for coding</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
       <div>
-        <form>
+        <form id="survey-form">
           <div class="header">
-            <h1>freeCodeCamp Survey Form</h1>
-            <p>Thank you for taking the time to help us improve the platform</p>
+            <h1 id="title">Background Form for Coding</h1>
+            <p id="description">
+              Thank you for taking the time to fill out this form!
+            </p>
           </div>
           <div class="form-group">
             <label for="name" id="name-label">Name</label>
             <input
               type="text"
-              name="name"
               id="name"
               class="form-control"
               placeholder="Enter your name"
@@ -30,19 +31,20 @@
             <label for="email" id="email-label">Email</label>
             <input
               type="email"
-              name="email"
               id="email"
               class="form-control"
               placeholder="Enter your Email"
+              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+              "
               required
             />
           </div>
           <div class="form-group">
-            <label for="age" id="age-label">Age</label>
+            <label for="age" id="number-label">Age</label>
             <input
               type="number"
-              name="age"
               id="number"
+              pattern=""
               min="10"
               max="100"
               class="form-control"
@@ -52,7 +54,10 @@
           </div>
           <div class="form-group">
             <fieldset>
-              <legend>Which option best describes your current role?</legend>
+              <legend>
+                Which of the following best reflects your current level of
+                coding?
+              </legend>
               <select
                 id="dropdown"
                 name="role"
@@ -60,25 +65,19 @@
                 required=""
               >
                 <option disabled="" selected="" value="">
-                  select current role
+                  select your current level
                 </option>
-                <option value="student">Student</option>
-                <option value="job">Full Time Job</option>
-                <option value="learner">Full Time Learner</option>
-                <option value="preferno">Prefer not to say</option>
-                <option value="other">Other</option>
+                <option value="job">Trainee</option>
+                <option value="part-job">Junior Developer</option>
+                <option value="part-job">Middle Developer</option>
+                <option value="part-job">Senior Developer</option>
+                <option value="part-job">Leader</option>
               </select>
             </fieldset>
             <fieldset>
-              <legend>Would you recommend freeCodeCamp to a friend?</legend>
-              <label for="definitely" id="definitely-label">Definitely</label>
-              <input
-                name="user-recommend"
-                value="definitely"
-                type="radio"
-                class="input-radio"
-                checked
-              />
+              <legend>
+                Would you recommend our YouTube channel to other developers?
+              </legend>
               <label for="maybe" id="maybe-label">Maybe</label>
               <input
                 name="user-recommend"
@@ -95,131 +94,83 @@
               />
             </fieldset>
             <fieldset>
-              <legend>What is your favorite feature of freeCodeCamp?</legend>
-              <select
-                id="most-like"
-                name="mstlike"
-                class="form-control"
-                required
-              >
+              <legend>
+                Which aspect of our channel do you find the most appealing?
+              </legend>
+              <select id="most" name="most" class="form-control" required>
                 <option disabled="" selected="" value="">
                   Select an option
                 </option>
-                <option value="challenges">Challenges</option>
-                <option value="projects">Projects</option>
-                <option value="community">Community</option>
-                <option value="opensource">Open Source</option>
+                <option value="bootcamp">Coding bootcamp</option>
+                <option value="projects">Coding projects</option>
+                <option value="crash">Crash language courses</option>
+                <option value="code-google">Coding or Googling</option>
+                <option value="trick">Coding tricks</option>
               </select>
             </fieldset>
             <fieldset>
               <legend>
-                would you like to see improved?<span class="clue"
+                What do you suggest should be improved?<span class="clue"
                   >(Check all that apply)</span
                 >
               </legend>
-              <label for="front-end-projects" id="front-end-projects-label"
-                >Front-end Projects</label
+              <label for="coding-bootcamp" id="coding-bootcamp-label"
+                >Coding bootcamp</label
               >
               <input
-                name="prefer"
-                value="front-end-projects"
+                name="suggest"
+                value="coding-bootcamp"
                 type="checkbox"
                 class="input-checkbox"
               />
-              <label for="back-end-projects" id="back-end-projects-label"
-                >Back-end Projects</label
+              <label for="coding-projects" id="coding-projects-label"
+                >Coding Projects</label
               >
               <input
-                name="prefer"
-                value="back-end-projects"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              <label for="data-visualization" id="data-visualization-label"
-                >Data Visualization</label
-              ><input
-                name="prefer"
-                value="data-visualization"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              <label for="challenges" id="challenges-label">Challenges</label>
-              <input
-                name="prefer"
-                value="challenges"
+                name="suggest"
+                value="coding-projects"
                 type="checkbox"
                 class="input-checkbox"
               />
               <label
-                for="open-source-community"
-                id="open-source-community-label"
-                >Open Source Community</label
+                for="crash-language-courses"
+                id="crash-language-courses-label"
+                >Crash language courses</label
+              ><input
+                name="suggest"
+                value="crash-language-courses"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              <label for="coding-or-googling" id="coding-or-googling-label"
+                >Coding or Googling</label
               >
               <input
-                name="prefer"
-                value="open-source-community"
+                name="suggest"
+                value="coding-or-googling"
                 type="checkbox"
                 class="input-checkbox"
               />
-              <label for="gitter-help-rooms" id="gitter-help-rooms-label"
-                >Gitter help rooms</label
+              <label for="coding-tricks" id="coding-tricks-label"
+                >Coding tricks</label
               >
               <input
-                name="prefer"
-                value="gitter-help-rooms"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              <label for="videos" id="videos-label">Videos</label>
-              <input
-                name="prefer"
-                value="videos"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              <label for="city-meetups" id="city-meetups-label"
-                >City Meetups</label
-              >
-              <input
-                name="prefer"
-                value="city-meetups"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              <label for="wiki" id="wiki-label">Wiki</label>
-              <input
-                name="prefer"
-                value="wiki"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              <label for="forum" id="forum-label">Forum</label>
-              <input
-                name="prefer"
-                value="forum"
-                type="checkbox"
-                class="input-checkbox"
-              />
-              <label for="additional-courses" id="additional-courses-label"
-                >Additional Courses</label
-              >
-              <input
-                name="prefer"
-                value="additional-courses"
+                name="suggest"
+                value="coding-tricks"
                 type="checkbox"
                 class="input-checkbox"
               />
             </fieldset>
           </div>
           <div class="form-group">
-            <label for="comments">Any comments or suggestions?</label>
+            <label for="comments">Any other comments or ideas?</label>
             <textarea
               id="comments"
               class="input-textarea"
               name="comment"
               placeholder="Enter your comment here..."
             ></textarea>
-            <input type="submit" value="Submit" />
+            <input id="submit" type="submit" value="Submit" />
           </div>
         </form>
       </div>
