@@ -2,6 +2,7 @@ body {
   background-image: url(https://images.pexels.com/photos/1109352/pexels-photo-1109352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   line-height: 2rem;
   font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
@@ -10,13 +11,6 @@ body {
 h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: -20px;
-}
-
-.header p {
-  font-style: bold;
-  font-size: larger;
-  text-align: center;
 }
 
 form {
@@ -26,4 +20,15 @@ form {
   color: blanchedalmond;
   padding: 2rem;
   line-height: 45px;
+  border-radius: 10px;
+}
+
+.header p {
+  font-style: bold;
+  font-size: larger;
+  text-align: center;
+}
+
+.input {
+  border-radius: 15px;
 }
