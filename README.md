@@ -11,7 +11,7 @@ A form HTML tempate as a exercise for creating a webpage to collect the data.
 
 ## GitHub page
 
-Click on this [link](https://armanpartovi.github.io/Survey-Form/). A GitHub page is craeted by author for this exercise.
+Click on this [link](https://devcodepush.github.io/Survey-Form/). A GitHub page is craeted by author for this exercise.
 
 
 ## Documentation
